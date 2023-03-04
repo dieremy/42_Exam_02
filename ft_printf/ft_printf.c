@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdarg.h>
-#include <stdlib.h>
 #include <unistd.h>
 
 int ft_putstr(char *s)
@@ -26,7 +25,6 @@ int ft_putchar(char c)
 
 int ft_putnbr(int n)
 {
-    char    c;
     int     len;
 
     len = 0;
@@ -101,9 +99,9 @@ int ft_printf(char const *ptr, ...)
 
 int main()
 {
-    int n = -214748;
-    ft_printf("%s\n", "ciao come stai");
+    int n = -2147483648;
+    ft_printf("%s\n", "how you doing");
     ft_printf("%d\n", n);
     ft_printf("%x\n", 54325234);
-    printf("%x", 54325234);
+    printf("%x\n", 54325234);
 }
